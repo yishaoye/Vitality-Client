@@ -1,0 +1,421 @@
+
+
+
+Button    继承自 Widget
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name":"button", // 名字
+        "touchAble":true, // 是否响应事件
+        "scale9Enable": false, // 是否九宫图( 可选 )
+        "capInsetsX": 0, // 坐标 x ( 九宫图 )
+        "capInsetsY": 0, // 坐标 y ( 九宫图 )
+        "capInsetsWidth": 100,  // 尺寸 宽度 ( 九宫图 )
+        "capInsetsHeight": 100, // 尺寸 高度 ( 九宫图 )
+        "scale9Width": 1,  // 缩放 高度 ( 九宫图 )
+        "scale9Height": 1, // 缩放 高度 ( 九宫图 )
+        "normal":"normal.png",    // 默认图片
+        "pressed":"press.png",    // 按下图片
+        "disabled":"disable.png", // 禁用图片  
+        "onPush":"buttonDown",  // 按下事件
+        "onRelease":"buttonUp", // 抬起事件
+        "onMove": "buttonMove", // 移动事件
+        "onLongClicked": "buttonLongClicked" // 长按事件
+    }
+
+CheckBox   继承自 Widget
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "checkBox", // 名字
+        "touchAble":true, // 是否响应事件
+        "backGroundBox":"normal.png", // 默认图片
+        "backGroundBoxSelected":"selected.png", // 选中图片
+        "frontCross":"check.png", // 按下图片
+        "state": true, // 初始状态
+        "onSelected": "onSelected",   // 选中事件
+        "onUnSelected" "onUnSelected",// 未选中事件
+        
+    }
+
+ImageView   继承自 Widget
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "imager", // 名字
+        "touchAble":true, // 是否响应事件
+        "fileName": "Imager.png", // 图片
+        "onDoubleClick": "onDoubleClick", // 双击事件
+    }
+
+Label   继承自 Widget
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "label", // 名字
+        "text":"Hello", // 显示文字
+        "touchAble":true, // 是否响应事件
+        "fontName": "宋体", // 字体名字
+        "fontSize": 20, // 字体大小
+        "touchSacleEnable": true, // 点击缩放
+        "scaleOffset": 0.5, // 缩放比例
+        "gravity": 1, // 锚点 0 中心; 1 左对齐; 2 右对齐
+    }
+
+LabelAtlas  继承自 Widget
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "label", // 名字
+        "touchAble":true, // 是否响应事件
+        "stringValue":"Hello", // 显示文字
+        "charMapFile": "", // 字体文件
+        "itemWidth": // 文字宽度
+        "itemHeight": // 文字高度
+        "startCharMap": // 开始字符
+    }
+
+ListView    继承自 ScrollView
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "label", // 名字
+        "touchAble":true, // 是否响应事件
+        "width": 128, // 宽度
+        "height": 128, // 高度
+        "clipAble": false, // 是否切割窗口
+        "backGroundScale9Enable": false, // 是否九宫图( 可选 )
+        "capInsetsX": 0, // 坐标 x ( 九宫图 )
+        "capInsetsY": 0, // 坐标 y ( 九宫图 )
+        "capInsetsWidth": 100,  // 尺寸 宽度 ( 九宫图 )
+        "capInsetsHeight": 100, // 尺寸 高度 ( 九宫图 )
+        "direction": 0, // 滑动方向 0 水平, 1 垂直
+        "acceleration": 600, // 加速度
+        "onScrollToTop": "onScrollToTop",       // 滑到顶端事件
+        "onScrollToBottom": "onScrollToBottom", // 滑到底部事件
+        "onScrollToLeft": "onScrollToLeft",     // 滑到左边事件
+        "onScrollToRight": "onScrollToRight",   // 滑到右边事件
+    }
+
+LoadingBar  继承自 Widget
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "label", // 名字
+        "touchAble":true, // 是否响应事件
+        "direction": 0, // 方向 0 水平, 1 垂直
+        "texture": 'imager.png', // 图片
+        "percent": 50, // 百分比 0 ~ 100
+    }
+
+Panel   继承自 ContainerWidget
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "label", // 名字
+        "touchAble":true, // 是否响应事件
+        "width": 128, // 宽度
+        "height": 128, // 高度
+        "clipAble": false, // 是否切割窗口
+        "backGroundScale9Enable": false, // 是否九宫图( 可选 )
+        "capInsetsX": 0, // 坐标 x ( 九宫图 )
+        "capInsetsY": 0, // 坐标 y ( 九宫图 )
+        "capInsetsWidth": 100,  // 尺寸 宽度 ( 九宫图 )
+        "capInsetsHeight": 100, // 尺寸 高度 ( 九宫图 )
+        "backGroundImage": "imager.png", // 加载图片
+    }
+
+RadioButton 继承自 Widget
+
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "label", // 名字
+        "touchAble":true, // 是否响应事件
+        "offsetX": 0, // 选中位置偏移 X
+        "offsetY": 0, // 选中位置偏移 Y
+        "scale9Enable": false, // 是否九宫图( 可选 )
+        "capInsetsX": 0, // 坐标 x ( 九宫图 )
+        "capInsetsY": 0, // 坐标 y ( 九宫图 )
+        "capInsetsWidth": 100,  // 尺寸 宽度 ( 九宫图 )
+        "capInsetsHeight": 100, // 尺寸 高度 ( 九宫图 )
+        "scale9Width": 1,  // 缩放 高度 ( 九宫图 )
+        "scale9Height": 1, // 缩放 高度 ( 九宫图 )
+        "normal":"normal.png",    // 默认图片
+        "pressed":"press.png",    // 按下图片
+        "disabled":"disable.png", // 禁用图片
+        "control": object, // 组合控制器
+    }
+
+RadioGroup  继承自 ScrollView
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "label", // 名字
+        "touchAble":true, // 是否响应事件
+        "width": 128, // 宽度
+        "height": 128, // 高度
+        "clipAble": false, // 是否切割窗口
+        "backGroundScale9Enable": false, // 是否九宫图( 可选 )
+        "capInsetsX": 0, // 坐标 x ( 九宫图 )
+        "capInsetsY": 0, // 坐标 y ( 九宫图 )
+        "capInsetsWidth": 100,  // 尺寸 宽度 ( 九宫图 )
+        "capInsetsHeight": 100, // 尺寸 高度 ( 九宫图 )
+        "direction": 0, // 滑动方向 0 水平, 1 垂直
+        "acceleration": 600, // 加速度
+        "onScrollToTop": "onScrollToTop",       // 滑到顶端事件
+        "onScrollToBottom": "onScrollToBottom", // 滑到底部事件
+        "onScrollToLeft": "onScrollToLeft",     // 滑到左边事件
+        "onScrollToRight": "onScrollToRight",   // 滑到右边事件
+        "onSelected": "onSelected", // 选中事件
+        "intervalX": 10, // radio控件的间距 X轴
+        "intervalY": 0,  // radio控件的间距 Y轴
+
+    }
+
+ScrollView  继承自 Panel
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "label", // 名字
+        "touchAble":true, // 是否响应事件
+        "width": 128, // 宽度
+        "height": 128, // 高度
+        "clipAble": false, // 是否切割窗口
+        "backGroundScale9Enable": false, // 是否九宫图( 可选 )
+        "capInsetsX": 0, // 坐标 x ( 九宫图 )
+        "capInsetsY": 0, // 坐标 y ( 九宫图 )
+        "capInsetsWidth": 100,  // 尺寸 宽度 ( 九宫图 )
+        "capInsetsHeight": 100, // 尺寸 高度 ( 九宫图 )
+        "direction": 0, // 滑动方向 0 水平, 1 垂直
+        "acceleration": 600, // 加速度
+        "onScrollToTop": "onScrollToTop",       // 滑到顶端事件
+        "onScrollToBottom": "onScrollToBottom", // 滑到底部事件
+        "onScrollToLeft": "onScrollToLeft",     // 滑到左边事件
+        "onScrollToRight": "onScrollToRight",   // 滑到右边事件
+
+    }
+       
+Slider
+
+TextArea    继承自 Widget
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name": "label", // 名字
+        "touchAble":true, // 是否响应事件
+        "text": "string", 显示文字
+        "fontSize": 20, // 字体大小
+        "fontName": "宋体", // 字体
+        "areaWidth": 100, // 区域宽度
+        "areaHeight": 100, // 区域高度
+        "hAlignment": true, // 左对齐
+        "vAlignment": true, // 右对齐
+
+    }
+TextButton  继承自 Button
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name":"button", // 名字
+        "touchAble":true, // 是否响应事件
+        "scale9Enable": false, // 是否九宫图( 可选 )
+        "capInsetsX": 0, // 坐标 x ( 九宫图 )
+        "capInsetsY": 0, // 坐标 y ( 九宫图 )
+        "capInsetsWidth": 100,  // 尺寸 宽度 ( 九宫图 )
+        "capInsetsHeight": 100, // 尺寸 高度 ( 九宫图 )
+        "scale9Width": 1,  // 缩放 高度 ( 九宫图 )
+        "scale9Height": 1, // 缩放 高度 ( 九宫图 )
+        "normal":"normal.png",    // 默认图片
+        "pressed":"press.png",    // 按下图片
+        "disabled":"disable.png", // 禁用图片  
+        "onPush":"buttonDown",  // 按下事件
+        "onRelease":"buttonUp", // 抬起事件
+        "onMove": "buttonMove", // 移动事件
+        "onLongClicked": "buttonLongClicked" // 长按事件
+        "title": "TextButton", // 文字
+        "fontSize": 20, // 字体大小
+        "fontName": "宋体", // 字体
+    }
+
+TextField   继承自 Widget
+
+    options
+    {
+        "x":0, // 坐标 x
+        "y":0, // 坐标 y
+        "rotation": 1, // 旋转
+        "scaleX": 1, // X轴缩放
+        "scaleY": 1, // Y轴缩放
+        "flipX": false, // x轴翻转
+        "flipY": false, // y轴翻转
+        "visible": true, // 是否显示
+        "colorR": 255, // 颜色 R
+        "colorG": 255, // 颜色 G
+        "colorB": 255, // 颜色 B
+        "colorO": 255, // 透明度
+        "name":"button", // 名字
+        "touchAble":true, // 是否响应事件
+        "placeHolder": , // (未知)
+        "text": "TextButton", // 文字
+        "fontSize": 20, // 字体大小
+        "fontName": "宋体", // 字体
+        "onOpenIME": "onOpenIME", // 打开输入法事件
+        "onCloseIME": "onCloseIME", // 关闭输入法事件
+    }
