@@ -1,0 +1,34 @@
+{
+    "classname":"GameScene",
+    "scenename":"GUIScene",
+    "scriptJS":"samples/GUI/js/GUIScene.js",
+    "retain":1,
+    "x":0,
+    "y":0,
+    "gameobjects":[
+        {
+            "classname":"GameObject",
+            "name":"backImg",
+            "x":480,
+            "y":320,
+            "objecttag":10009,
+            "components":[
+                {
+                    "classname":"gui",
+                    "name":"backImg",
+                    "widgettree":{
+                        "classname":"ImageView",
+                        "options":{
+                            "x":0,
+                            "y":0,
+                            "fileName":"samples/GUI/res/image6630.png",
+                            "name":"imageview"
+                        },
+                        "children":[
+                        ]
+                    }
+                }
+            ]
+        }        
+    ]
+}

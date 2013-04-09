@@ -1,0 +1,43 @@
+{
+    "classname":"GameScene",
+    "scenename":"cityScene",
+    "scriptJS":"samples/tileMaps/js/city_Scene.js",
+    "gameobjects":[
+        {
+            "classname":"GameObject",
+            "name":"map",
+            "scriptJS":"samples/tileMaps/js/city_MapObject.js",
+            "x":0,
+            "y":0,
+            "objecttag":10000,
+            "components":[
+                {
+                    "classname":"tiledMap",
+                    "file":"samples/tileMaps/tileMaps/orthogonal-test1.tmx",
+                    "scale":1,
+                    "x":100,
+                    "y":100,
+                    "objecttag":10000
+                },
+                {
+                    "classname":"weightMap",
+                    "file":"samples/tileMaps/tileMaps/orthogonal-test1.json",
+                    "tileW":16,
+                    "tileH":16
+                },
+                {
+                    "classname":"touches"
+                },
+                {
+                    "classname":"label",
+                    "name":"ShowText",
+                    "labeltext":"City Scene",
+                    "x":480,
+                    "y":580,
+                    "fontname":"Arial",
+                    "fontsize":24
+                }
+            ]
+        }
+    ]
+}

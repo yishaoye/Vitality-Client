@@ -1,0 +1,29 @@
+[
+    {
+        "name":"sanlitun",
+        "normal":"samples/catalog/res/sanlitun.png",
+        "pressed":"samples/catalog/res/sanlitun.png",
+        "disabled":"samples/catalog/res/sanlitun.png",
+        "text":"三里屯",
+        "sceneJson": "samples/qiuheti/json/qiuheti.json",
+        "scene":"qiuhetiScene"
+    },
+    {
+        "name":"standardTetris",
+        "normal":"samples/catalog/res/tetris_icon.png",
+        "pressed":"samples/catalog/res/tetris_icon.png",
+        "disabled":"samples/catalog/res/tetris_icon.png",
+        "text":"俄罗斯方块",
+        "sceneJson": "samples/standardTetris/json/standardTetris.json",
+        "scene":"standardTetris"
+    },
+    {
+        "name":"gui",
+        "normal":"samples/catalog/res/GUI.png",
+        "pressed":"samples/catalog/res/GUI.png",
+        "disabled":"samples/catalog/res/GUI.png",
+        "text":"UI示例",
+        "sceneJson": "samples/GUI/json/GUIScene.json",
+        "scene":"GUIScene"
+    }
+]

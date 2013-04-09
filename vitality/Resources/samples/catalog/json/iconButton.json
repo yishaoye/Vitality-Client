@@ -1,0 +1,50 @@
+{
+    "classname":"GameObject",
+    "name":"iconButton",
+    "x":100,
+    "y":820,
+    "objecttag":10002,
+    "components":[
+        {
+            "classname":"gui",
+            "name":"button",
+            "widgettree":{
+                "classname":"Button",
+                "scriptJS":"samples/catalog/js/uiEvent.js",
+                "options":{
+                    "x":0,
+                    "y":10,
+                    "touchAble":true,
+                    "normal":"samples/catalog/res/sanlitun.png",
+                    "pressed":"samples/catalog/res/sanlitun.png",
+                    "disabled":"samples/catalog/res/sanlitun.png",
+                    "onPush":"buttonDown",
+                    "onRelease":"buttonUp",
+                    "name":"button"
+                },
+                "children":[
+                ]
+            }
+        },
+        {
+            "classname":"gui",
+            "name":"label",
+            "widgettree":{
+                "classname":"Label",
+                "scriptJS":"samples/catalog/js/uiEvent.js",
+                "options":{
+                    "x":0,
+                    "y":-60,
+                    "fontSize": 20,
+                    "text":"Hello SPGUI",
+                    "colorR":255,
+                    "colorG":255,
+                    "colorB":255,
+                    "name":"label"
+                },
+                "children":[
+                ]
+            }
+        }
+    ]
+}

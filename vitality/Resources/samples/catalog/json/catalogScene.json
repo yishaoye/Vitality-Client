@@ -1,0 +1,84 @@
+{
+    "classname":"GameScene",
+    "scenename":"catalogScene",
+    "scriptJS":"samples/catalog/js/catalogScene.js",
+    "retain":1,
+    "x":0,
+    "y":0,
+    "gameobjects":[
+        {
+            "classname":"GameObject",
+            "name":"topbar",
+            "x":0,
+            "y":0,
+            "objecttag":10002,
+            "components":[
+	        {
+                    "classname":"gui",
+                    "name":"backImg",
+                    "widgettree":{
+                        "classname":"Panel",
+                        "options":{
+                            "x":0,
+                            "y":0,
+                            "colorR":0,
+                            "colorG":0,
+                            "colorB":0,
+                            "colorO":0,
+                            "backGroundImage":"",
+                            "width":640,
+                            "height":960,
+                            "name":"backImg"
+                        },
+                        "children":[
+                            {
+                                "classname" : "ImageView",
+                                "options" : {
+                                "x" : 320, 
+                                "y" : 120,
+                                "fileName" : "samples/catalog/res/shelf_background.png",
+                                "name" : "imageview"
+                                },
+                                "children" : [
+                                ]
+                            },
+                            {
+                                "classname" : "ImageView",
+                                "options" : {
+                                "x" : 320, 
+                                "y" : 360,
+                                "fileName" : "samples/catalog/res/shelf_background.png",
+                                "name" : "imageview"
+                                },
+                                "children" : [
+                                ]
+                            },
+                            {
+                                "classname" : "ImageView",
+                                "options" : {
+                                "x" : 320, 
+                                "y" : 600,
+                                "fileName" : "samples/catalog/res/shelf_background.png",
+                                "name" : "imageview"
+                                },
+                                "children" : [
+                                ]
+                            },
+                            {
+                                "classname" : "ImageView",
+                                "options" : {
+                                "x" : 320, 
+                                "y" : 840,
+                                "fileName" : "samples/catalog/res/shelf_background.png",
+                                "name" : "imageview"
+                                },
+                                "children" : [
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{2efb9df0-468f-439c-8d44-acc6dc41e2f6}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{87dabb57-58df-4afb-93cc-1bd6d0609341}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{ff53c6ab-3dbd-421c-a86c-235c9c2416ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\GUI">
+      <UniqueIdentifier>{a4405f5d-afba-4423-a29e-a5a52bc42c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\JSBind">
+      <UniqueIdentifier>{607ac6a8-1ebf-4202-b643-a138f1b9cc26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Network">
+      <UniqueIdentifier>{2dfb13c5-b4f5-4dcf-9ae8-4d43af9a3fd9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\JSBind\SPJSManager.h">
+      <Filter>libs\JSBind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\JSBind\SPJSProcess.h">
+      <Filter>libs\JSBind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\GUI\CClipAbleLayerColor.h">
+      <Filter>libs\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\GUI\CClipAbleSprite.h">
+      <Filter>libs\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\GUI\CLabelAtlas.h">
+      <Filter>libs\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\GUI\CPrimitivesNode.h">
+      <Filter>libs\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\GUI\CRenderNode.h">
+      <Filter>libs\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\GUI\CTextField.h">
+      <Filter>libs\GUI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\JSBind\SPJSManager.cpp">
+      <Filter>libs\JSBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\JSBind\SPJSProcess.cpp">
+      <Filter>libs\JSBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\GUI\CClipAbleLayerColor.cpp">
+      <Filter>libs\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\GUI\CClipAbleSprite.cpp">
+      <Filter>libs\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\GUI\CLabelAtlas.cpp">
+      <Filter>libs\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\GUI\CPrimitivesNode.cpp">
+      <Filter>libs\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\GUI\CRenderNode.cpp">
+      <Filter>libs\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\GUI\CTextField.cpp">
+      <Filter>libs\GUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Vitality.ico">
+      <Filter>win32</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Vitality.rc">
+      <Filter>win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
